@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKC FLORENO | Commercial Flooring Specialists</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // Deep Blue
+                        secondary: '#64748b', // Slate Gray
+                        accent: '#d97706', // Amber for calls to action
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            /* Updated Hero Image: Commercial polished concrete/flooring texture */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-primary tracking-tight">
+                    DKC <span class="text-gray-600">FLORENO</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="hover:text-primary transition">About Us</a>
+                    <a href="#services" class="hover:text-primary transition">Services</a>
+                    <a href="#gallery" class="hover:text-primary transition">Gallery</a>
+                    <a href="#contact" class="px-5 py-2 bg-primary text-white rounded-md hover:bg-blue-800 transition shadow-sm">
+                        Get a Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="#about" class="block px-6 py-3 hover:bg-gray-50">About Us</a>
+            <a href="#services" class="block px-6 py-3 hover:bg-gray-50">Services</a>
+            <a href="#gallery" class="block px-6 py-3 hover:bg-gray-50">Gallery</a>
+            <a href="#contact" class="block px-6 py-3 text-primary font-semibold">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl mx-auto animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Master Craftsmanship in Commercial Flooring</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light text-gray-200">
+                Specializing in Custom Hand-Cut Patterns, Hot Welding, and Floor Preparation.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 bg-accent hover:bg-yellow-600 text-white font-semibold rounded-md transition duration-300 shadow-lg">
+                    Request an Estimate
+                </a>
+                <a href="#gallery" class="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold rounded-md transition duration-300">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <!-- Updated About Image: Professional measuring floor -->
+                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Flooring Specialist at Work" class="rounded-lg shadow-xl w-full object-cover h-96" onerror="this.src='https://placehold.co/800x600?text=Flooring+Specialist'">
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="text-accent font-bold uppercase tracking-widest text-sm mb-2">About Our Team</h4>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Led by 20 Years of Industry Excellence</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        DKC FLORENO is a premier flooring contractor led by <strong>Mr. DK Cho (Dongkyu)</strong>. With over two decades of hands-on experience in the flooring industry, Mr. Cho brings a level of precision and artistry that is rare in the field.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Our professional team has successfully managed and executed critical projects for commercial sites across <strong>Winnipeg</strong> and <strong>Vancouver Island</strong>. We take pride in our extensive portfolio of government contracts, where strict adherence to quality standards and timelines is paramount.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-primary mr-3"></i> Expert Project Management
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-primary mr-3"></i> Specialized in Government & Commercial Sites
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-primary mr-3"></i> Precision Hand-Cut Designs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Services</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From structural preparation to artistic finishing, we cover the full spectrum of commercial flooring needs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Floor Preparation</h3>
+                    <p class="text-gray-600">Professional floor leveling and tapering to ensure a perfectly smooth substrate for any installation.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Installation Specialists</h3>
+                    <p class="text-gray-600">Expert installation of Sheet Vinyl, Linoleum, Rubber flooring, Carpet Tiles, and Luxury Vinyl Tile (LVT).</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Flash Coving & Hot Welding</h3>
+                    <p class="text-gray-600">Seamless, hygienic integration of floor and wall for healthcare and commercial environments using hot welding techniques.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-l-4 border-accent">
+                    <div class="w-14 h-14 bg-orange-100 text-accent rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom Pattern Finish</h3>
+                    <p class="text-gray-600">We specialize in hand-cut patterns including circles, ovals, curves, arcs, and spirals for unique design requirements.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wall Protection</h3>
+                    <p class="text-gray-600">Installation of durable wall protection systems to prevent damage in high-traffic commercial corridors.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-full flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Consultation</h3>
+                    <p class="text-gray-600">Technical advice on material selection and installation methods suitable for your specific site conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Project Gallery</h2>
+                <p class="text-gray-600 mt-4">A glimpse into our workmanship and commercial projects.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Gallery Item 1 -->
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-64">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Commercial Hallway" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/800x600?text=Commercial+Project'">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg">Commercial Corridors</p>
+                    </div>
+                </div>
+                 <!-- Gallery Item 2 (Custom Pattern) -->
+                 <div class="group relative overflow-hidden rounded-lg cursor-pointer h-64">
+                    <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Patterned Floor" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/800x600?text=Pattern+Detail'">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg">Custom Hand-Cut Patterns</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-64">
+                    <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vinyl Flooring" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/800x600?text=Vinyl+Installation'">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg">Sheet Vinyl Installation</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-64">
+                    <img src="https://images.unsplash.com/photo-1595429035839-c99c298ffdde?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Office Flooring" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/800x600?text=Office+Flooring'">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg">Office Spaces</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-64">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Detail Work" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/800x600?text=Detail+Work'">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg">Flash Coving & Detail</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-64">
+                    <img src="https://images.unsplash.com/photo-1517581177697-a06a6f3c4ef3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lobby" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/800x600?text=Lobby+Area'">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg">Lobbies & Public Areas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Quote Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Contact Info -->
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+                    <p class="mb-8 text-blue-100">Ready to start your project? Contact Mr. DK Cho directly for an estimate or consultation.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-4 text-accent text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-blue-100">204-229-8998</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-4 text-accent text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-blue-100">dkcfloreno@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-accent text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Areas Served</h4>
+                                <p class="text-blue-100">Winnipeg, Manitoba</p>
+                                <p class="text-blue-100">Vancouver Island, BC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote Form -->
+                <div class="md:w-2/3">
+                    <form class="bg-white rounded-lg p-8 text-gray-800 shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Request an Estimate</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Name</label>
+                                <input type="text" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-primary" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Phone</label>
+                                <input type="tel" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-primary" placeholder="Your Phone Number">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-primary" placeholder="your@email.com">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold mb-2">Project Details / Service Required</label>
+                            <textarea class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-primary h-32" placeholder="Tell us about your project (e.g., area size, flooring type needed)"></textarea>
+                        </div>
+                        <button type="button" onclick="alert('Thank you! Your quote request has been simulated.')" class="w-full bg-accent hover:bg-yellow-600 text-white font-bold py-3 rounded-md transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-blue-200 py-8 text-center text-sm">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2026 DKC FLORENO. All rights reserved.</p>
+            <p class="mt-2">Professional Commercial Flooring Solutions.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth Scroll for anchor links (fallback for browsers that don't support scroll-behavior: smooth in CSS)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                menu.classList.add('hidden'); // Close mobile menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
